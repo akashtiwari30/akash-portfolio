@@ -180,7 +180,6 @@ height: 100%; */
   color: var(--accent-color-5);
   transform: translateY(-3px);
 } */
-/* Add these styles to your CSS file */
 
 .social-icon {
   transition: color 0.3s ease;
@@ -215,12 +214,8 @@ a:hover .fa-envelope {
 
 /* Style.css */
 .hero-section-image {
-  /* background-color: #000; */
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-  /* padding: 2rem; */
-  /* margin-top: 30px; */
   margin-bottom: 130px;
 }
 
@@ -229,20 +224,6 @@ a:hover .fa-envelope {
   width: 304px;
   height: 296px;
 }
-
-/* .circle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #F6F1FF 0%, #E1D8FF 100%);
-  box-shadow: 
-    inset -25px -25px 40px rgba(0,0,0,0.2),
-    0 0 20px rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(5px);
-} */
 
 /* Apply variables to the circle */
 .circle {
@@ -376,9 +357,6 @@ a:hover .fa-envelope {
 }
 
 /* skills section */
-/* #skills{
-  margin-top: 30rem;
-} */
 #skills .algorithm-card {
   background-color: var(--card-bg-color);
   border-radius: 10px;
@@ -424,19 +402,6 @@ a:hover .fa-envelope {
 }
 
 /* Dark theme background */
-/* .container {
-  background-color: #1A1A1A;
-  padding: 40px;
-  border-radius: 15px;
-} */
-
-/* @media only screen and (min-width: 601px) and (max-width: 1024px) {
-  .skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-} */
 
 /* for contact us */
 
@@ -756,9 +721,6 @@ border: 1px solid color-mix(in srgb, var(--primary-color) 30%, transparent);
       0 0 0 0 rgba(var(--primary-rgb), 0);
   }
 }
-
-
-
 
  .theme-toggle i {
   /* display: inline-block; */
