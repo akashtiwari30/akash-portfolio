@@ -31,6 +31,8 @@ body {
   transition: all 0.3s ease, border 0.3s ease;
   border: 0.5px solid var(--navbar-border-color);
   padding: 5px 10px !important;
+  font-size: 15px !important;
+    font-weight: 500 !important;
 }
 /* .nav-link:hover{
   background: linear-gradient(90deg, #ff6b6b, #ffd93d);
@@ -101,6 +103,16 @@ height: 100%; */
 #hero {
   margin-top: 125px;
 }
+.developer{
+  color: var(--primary-color);
+  font-weight: 700;
+}
+.i-flip1,
+.i-flip2{
+  color: var(--primary-color);
+  font-size: 3rem;
+  font-weight: 700;
+}
 .download-button {
   background-color: var(--button-bg-color);
   border-radius: 5px;
@@ -120,7 +132,8 @@ height: 100%; */
   letter-spacing: 0.4rem;
 }
 .description {
-  width: 80%;
+  width: 87%;
+  color: var(--text-color-2);
 }
 .highlight span {
   display: inline-block;
@@ -175,12 +188,12 @@ height: 100%; */
 
 /* GitHub */
 a:hover .fa-github {
-  color: var(--bg-back-8);
+  color: var(--github-hover-color);
 }
 
 /* LinkedIn */
 a:hover .fa-linkedin-in {
-  color: var(--blue-color);
+  color: var(--linkedin-hover-color);
 }
 
 /* Twitter */
@@ -190,12 +203,12 @@ a:hover .fa-linkedin-in {
 
 /* Phone */
 a:hover .fa-phone {
-  color: var(--green-color);
+  color: var(--phone-hover-color);
 }
 
 /* Email */
 a:hover .fa-envelope {
-  color: var(--primary-color);
+  color: var(--envelope-hover-color);
 }
 
 /* ---- Hero Section Image ---- */
@@ -231,6 +244,7 @@ a:hover .fa-envelope {
   backdrop-filter: blur(5px);
 } */
 
+/* Apply variables to the circle */
 .circle {
   position: absolute;
   top: 0;
@@ -238,54 +252,24 @@ a:hover .fa-envelope {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background: linear-gradient(
-    145deg,
-    #ffffff 10%,
-    #f4f4f4 40%,
-    rgba(173, 158, 250, 0.5) 100%
-  );
-  box-shadow: inset -20px -20px 50px rgba(0, 0, 0, 0.15),
-    0 0 25px rgba(255, 255, 255, 0.3);
+  background: var(--circle-bg);
+  box-shadow: var(--circle-shadow);
   backdrop-filter: blur(5px);
-  filter: contrast(95%) brightness(95%);
+  filter: var(--circle-filter);
 }
 
-/* .square {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 150px;
-  height: 150px;
-  background: rgba(187, 173, 255, 0.5);
-  backdrop-filter: blur(5px);
-
-  or
-
-   background: linear-gradient(135deg, 
-    rgba(187, 173, 255, 0.4) 0%,
-    rgba(147, 128, 255, 0.6) 100%
-  );
-  backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 
-    0 8px 32px 0 rgba(31, 38, 135, 0.37),
-    inset 0 0 30px rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  transform: rotate(-5deg);
-} */
-
+/* Apply variables to the square */
 .square {
   position: absolute;
   bottom: -50%;
   right: -50%;
   width: 150px;
   height: 150px;
-  background: rgba(187, 173, 255, 0.3);
+  background: var(--square-bg);
   backdrop-filter: blur(8px);
   border-radius: 12px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1),
-    inset 0 0 20px rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: var(--square-shadow);
+  border: var(--square-border);
   position: relative;
   overflow: hidden;
 }
@@ -402,6 +386,7 @@ a:hover .fa-envelope {
   width: 100%;
   max-width: 400px;
   margin: 0 auto 2rem;
+  box-shadow: var(--card-shadow);
 }
 
 #skills .geometric-shape {
@@ -500,9 +485,9 @@ a:hover .fa-envelope {
 
 #contactform .kave-btn {
   position: relative;
-  border: solid 1px rgba(0, 214, 252, 0.3);
+border: 1px solid color-mix(in srgb, var(--primary-color) 30%, transparent);
   background: none;
-  color: rgba(0, 214, 252, 0.5);
+  color: color-mix(in srgb, var(--primary-color) 50%, transparent);
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-weight: normal;
@@ -512,35 +497,56 @@ a:hover .fa-envelope {
   outline: none;
 }
 
-#contactform .kave-btn:before {
+
+/* Decorative top and bottom lines */
+#contactform .kave-btn::before,
+#contactform .kave-btn::after {
   content: "";
   position: absolute;
+  width: 60px;
+  height: 1px;
+  background: var(--primary-color);
+  transition: all 0.25s ease;
+}
+#contactform .kave-btn::before {
   top: 0;
   left: 10%;
-  width: 60px;
-  height: 1px;
   transform: translateY(-1px);
-  background: rgba(0, 214, 252, 1);
-  transition: all 0.25s ease;
 }
 
-
-#contactform .kave-btn:after {
-  content: "";
-  position: absolute;
+#contactform .kave-btn::after {
   bottom: 0;
   right: 10%;
-  width: 60px;
-  height: 1px;
   transform: translateY(1px);
-  background: rgba(0, 214, 252, 1);
-  transition: all 0.25s ease;
 }
 
+/* Hover effects */
 #contactform .kave-btn:hover {
-  box-shadow: 1px 1px 8px rgba(0, 214, 252, 0.3);
-  color: rgba(0, 214, 252, 1);
-  text-shadow: 0 0 8px rgba(0, 214, 252, 0.4);
+  box-shadow: 1px 1px 8px color-mix(in srgb, var(--primary-color) 30%, transparent);
+  color: var(--primary-color);
+  text-shadow: 0 0 8px color-mix(in srgb, var(--primary-color) 40%, transparent);
+}
+
+/* Vertical lines */
+#contactform .kave-line::before,
+#contactform .kave-line::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 20px;
+  background: var(--primary-color);
+  transition: all 0.25s ease;
+}
+#contactform .kave-line::before {
+  bottom: 30%;
+  right: 0;
+  transform: translateX(1px);
+}
+
+#contactform .kave-line::after {
+  top: 30%;
+  left: 0;
+  transform: translateX(-1px);
 }
 
 #contactform .kave-btn:hover:before {
@@ -561,119 +567,17 @@ a:hover .fa-envelope {
   top: 0;
 }
 
-#contactform .kave-line:before {
-  content: "";
-  position: absolute;
-  bottom: 30%;
-  right: 0;
-  width: 1px;
-  height: 20px;
-  transform: translateX(1px);
-  background: rgba(0, 214, 252, 1);
-  transition: all 0.25s ease;
-}
-
-#contactform .kave-line:after {
-  content: "";
-  position: absolute;
-  top: 30%;
-  left: 0;
-  width: 1px;
-  height: 20px;
-  transform: translateX(-1px);
-  background: rgba(0, 214, 252, 1);
-  transition: all 0.25s ease;
-}
-
 /* for resume  */
 #resume,
 #contactform {
-  overflow-x: hidden !important;
+  overflow: hidden !important;
 }
-/* #resume .resume-container {
-  padding: 50px 20px;
-  position: relative;
-}
-#resume .resume-container::before {
-  content: "";
-  position: absolute;
-  left: 0%;
-  top: 20px;
-  bottom: 20px;
-  width: 2px;
-  background-color: #6c6c6c;
-  z-index: 1;
-} */
-/* #resume .resume-section-heading {
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-bottom: 20px;
-  position: relative;
-}
-#resume .resume-section-heading::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: var(--bg-back-8);
-  top: 20%;
-  left: 0%;
-  z-index: 1;
-}
-#resume .resume-section-heading span {
-  display: inline-block;
-  background-color: var(--bg-back-4);
-  padding: 0 10px;
-  position: relative;
-  z-index: 2;
-}
-#resume .resume-card {
-  background-color: var(--bg-back-4);
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transition: background-color 0.3s;
-  cursor: pointer;
-}
-#resume .resume-card:hover {
-  background-color: var(--bg-back-3);
-}
-#resume .resume-card h3 {
-  font-size: 1.1rem;
-  margin-bottom: 5px;
-  font-weight: 600;
-}
-#resume .resume-card h4 {
-  font-size: 0.9rem;
-  color: var(--bg-back-8);
-  margin-bottom: 10px;
-  font-style: italic;
-  font-weight: 500;
-}
-
-#resume .resume-card p {
-  font-size: 0.85rem;
-  color: var(--bg-back-8);
-} */
-
-/* #resume .main-heading {
-  font-size: 2.5rem;
-  font-weight: 800;
-  text-align: center;
-  margin-bottom: 20px;
-  letter-spacing: 1px;
-}
-#resume .years-style {
-  font-size: 0.8rem;
-  color: var(--bg-back-8);
-} */
 
 #resume .section-title {
   font-size: 1.5rem;
   font-weight: bold;
   color: var(--text-color);
-  border-bottom: 2px solid var(--secondary-color);
+  border-bottom: 2px solid var(--primary-color);
   display: inline-block;
   margin-bottom: 1rem;
 }
@@ -691,7 +595,7 @@ a:hover .fa-envelope {
   left: 10px;
   width: 2px;
   height: 100%;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 /* Horizontal Line */
@@ -702,7 +606,7 @@ a:hover .fa-envelope {
   top: 1.25rem;
   width: 28px;
   height: 2px;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 #resume .card {
@@ -716,7 +620,7 @@ a:hover .fa-envelope {
 
 #resume .card-title {
   color: var(--text-color);
-  font-size: 1rem;
+  font-size: 1.1rem;
   text-align: left;
 }
 
@@ -766,6 +670,9 @@ a:hover .fa-envelope {
 }
 
 .projects-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
   transition: transform 0.5s ease;
 }
 
@@ -813,12 +720,12 @@ a:hover .fa-envelope {
 .pulse {
     width: 40px;
     height: 40px;
-    background: #FF6D4A; /* dark mode primary color */
+    background: var(--primary-color); 
     border-radius: 50% !important;
     position: fixed;
     right: 10px;
     top: 110px;
-    color: #FFF;
+    color: var(--white-color);
     font-size: 15px;
     display: flex;
     align-items: center;
@@ -831,18 +738,25 @@ a:hover .fa-envelope {
     cursor: pointer;
 }
 
-/* Subtle Pulse Animation */
+/* Subtle Pulse Animation using primary theme color */
 @keyframes animate-pulse {
-    0% {
-        box-shadow: 0 0 0 0 rgba(255,109,74,0.7), 0 0 0 0 rgba(255,109,74,0.7);
-    }
-    50% {
-        box-shadow: 0 0 0 15px rgba(255,109,74,0.2), 0 0 0 0 rgba(255,109,74,0.7);
-    }
-    100% {
-        box-shadow: 0 0 0 0 rgba(255,109,74,0), 0 0 0 0 rgba(255,109,74,0);
-    }
+  0% {
+    box-shadow:
+      0 0 0 0 rgba(var(--primary-rgb), 0.7),
+      0 0 0 0 rgba(var(--primary-rgb), 0.7);
+  }
+  50% {
+    box-shadow:
+      0 0 0 15px rgba(var(--primary-rgb), 0.2),
+      0 0 0 0 rgba(var(--primary-rgb), 0.7);
+  }
+  100% {
+    box-shadow:
+      0 0 0 0 rgba(var(--primary-rgb), 0),
+      0 0 0 0 rgba(var(--primary-rgb), 0);
+  }
 }
+
 
 
 
@@ -947,6 +861,9 @@ a:hover .fa-envelope {
   }
   .description {
     width: 100%;
+  }
+  .about-text{
+    text-align: justify;
   }
 }
 

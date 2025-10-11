@@ -203,7 +203,7 @@ const Hero = () => {
                 <span className="i-flip2">i</span>
               </span>
             </h1>
-            <h3 className="mt-2 design-role">Frontend Developer</h3>
+            <h3 className="mt-2 design-role">Frontend <span className="developer">Developer</span></h3>
             <p className="mt-4 description">
               I create beautiful and functional websites with modern
               technologies, and user-friendly websites With a keen eye for

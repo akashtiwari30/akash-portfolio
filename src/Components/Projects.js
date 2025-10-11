@@ -44,10 +44,10 @@ const Projects = () => {
   return (
     <section className="container-fluid my-4" id="projects">
       <div className="mb-4 text-center">
-<h2 className="text-center">Latest Projects</h2>
-<p>What i’ve been up to</p>
+        <h2 className="text-center">Latest Projects</h2>
+        <p>What i’ve been up to</p>
       </div>
-      
+
       {/* Project Cards */}
       <div className="row g-4">
         {projects.map((project, index) => (
@@ -91,16 +91,14 @@ const Projects = () => {
         <div className="modal-dialog modal-dialog-centered modal-lg">
           <div className="modal-content border-0 shadow-lg rounded-4">
             {/* Modal Header */}
-            <div className="modal-header project-modal-header rounded-top p-3">
+            <div className="modal-header project-modal-header rounded-top px-3 py-2">
               <h5 className="modal-title">{selectedProject?.title}</h5>
               <button
                 type="button"
                 className="btn-close port-btns"
                 data-bs-dismiss="modal"
                 aria-label="Close"
-              >
-                
-              </button>
+              ></button>
             </div>
 
             {/* Modal Body */}
@@ -118,20 +116,24 @@ const Projects = () => {
                 {/* Info */}
                 <div className="col-md-7 d-flex flex-column justify-content-center">
                   <h5 className="mb-2">{selectedProject?.type}</h5>
-                  <p className="mb-3 text-color-2 fs-6">{selectedProject?.description}</p>
+                  <p className="mb-3 text-color-2 fs-6">
+                    {selectedProject?.description}
+                  </p>
                   <p className="mb-3 fw-semibold">
                     Tech Stack:{" "}
-                    <span className="fs-6 blue-color">{selectedProject?.tech}</span>
+                    <span className="fs-6 blue-color">
+                      {selectedProject?.tech}
+                    </span>
                   </p>
                   <div>
-                  <a
-                    href={selectedProject?.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="port-btns text-ceneter btn-sm mt-auto"
-                  >
-                    Visit Project
-                  </a>
+                    <a
+                      href={selectedProject?.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="port-btns text-ceneter btn-sm mt-auto"
+                    >
+                      Visit Project
+                    </a>
                   </div>
                 </div>
               </div>
