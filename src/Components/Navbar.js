@@ -153,9 +153,9 @@ function Navbar() {
                     { label: "Home", href: "#hero" },
                     { label: "About Us", href: "#about" },
                     { label: "Skills", href: "#skills" },
+                    { label: "Projects", href: "#projects" },
                     { label: "Resume", href: "#resume" },
-                    // { label: "Works", href: "#works" },
-                    { label: "Services", href: "#services" },
+                    // { label: "Services", href: "#services" },
                     {
                       label: "Let's Talk",
                       href: "#contactform",
