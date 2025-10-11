@@ -25,8 +25,8 @@ function Navbar() {
 
     // Offcanvas title animation
     tl.from(navBrandRef.current, {
-      delay: 1,
-      duration: 0.5,
+      delay: 0.3,
+      duration: 0.3,
       opacity: 0,
       y: -50,
       ease: "power2.out",
@@ -36,22 +36,22 @@ function Navbar() {
     tl.from(
       letterRefs.current,
       {
-        duration: 0.5,
+        duration: 0.3,
         opacity: 0,
         y: 20,
-        stagger: 0.2,
+        stagger: 0.1,
         ease: "back.out(1.7)",
       },
-      "-=0.3"
+      "-=0.2"
     ); // Overlap with previous animation
 
     // Nav items animation
     tl.from(navItemsRef.current, {
-      delay: 0.2,
-      duration: 0.5,
+      delay: 0.1,
+      duration: 0.3,
       opacity: 0,
-      y: -50,
-      stagger: -0.3,
+      y: -20,
+      stagger: -0.1,
       ease: "power2.out",
     });
   }, []);
