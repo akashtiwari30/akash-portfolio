@@ -86,10 +86,10 @@ const resumeData = {
       period: "06/2023 - 08/2023",
       description:
         "Developed patient platform serving 10K+ users. Built responsive UI and telehealth features. 95% user satisfaction. Tech: React.js, Tailwind CSS, WebRTC.",
-    },
-    
+    }, 
    
   ],
+  
   education: [
     {
       title:
