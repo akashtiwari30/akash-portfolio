@@ -10,22 +10,72 @@ const resumeData = {
     {
       title: "Frontend Developer",
       organization: "Biztechnosys Infotech Pvt Ltd",
-      projectName: "Ramaiah Ayurveda",
-      projectType: "Healthcare Management System",
-      website: "https://demo.ramaiahayurveda.com/",
+      projectName: "CRM Doctor Website",
+      projectType: "CRM Doctor",
+      website: "https://green-lobster-463551.hostingersite.com/",
       period: "03/2024 - Present",
       description:
-        "Led healthcare platform development. Optimized performance by 40%. Implemented responsive design and real-time analytics. Tech: React.js, Redux, Material-UI, REST APIs.",
+        "CRM Doctor Website showcasing multiple dashboard variations for cloning.",
     },
     {
       title: "Frontend Developer",
       organization: "Biztechnosys Infotech Pvt Ltd",
-      projectName: "Zuwara",
-      projectType: "Clinical Trials Portal",
-      website: "https://zuwara.net/",
+      projectName: "Vtiger CRM Dashboard",
+      projectType: "Vtiger CRM",
+      website: "https://central.crm-doctor.com/uistaging/",
       period: "09/2023 - 02/2024",
       description:
-        "Built secure clinical trials portal. Implemented RBAC and HIPAA-compliant features. Enhanced data entry efficiency by 60%. Tech: React.js, TypeScript, AWS Cognito.",
+        "Optimized CRM dashboard with an enhanced UI experience.",
+    },
+    {
+      title: "Frontend Developer",
+      organization: "Biztechnosys Infotech Pvt Ltd",
+      projectName: "Biz Infra",
+      projectType: "Facility Management",
+      website: "https://bizinfratech.in/",
+      period: "09/2023 - 02/2024",
+      description:
+        "Professional facility management services website for Biz Infra group.",
+    },
+    {
+      title: "Frontend Developer",
+      organization: "Biztechnosys Infotech Pvt Ltd",
+      projectName: "Dream Sparks Foundation",
+      projectType: "NGO Organization",
+      website: "https://dreamsparkfoundation.org/",
+      period: "09/2023 - 02/2024",
+      description:
+        "Non-profit organization working for education and healthcare of the underprivileged.",
+    },
+    {
+      title: "Frontend Developer",
+      organization: "Biztechnosys Infotech Pvt Ltd",
+      projectName: "Tech Refurb Yard",
+      projectType: "Laptop Repair & Sales",
+      website: "https://techrefurbyard.com/",
+      period: "09/2023 - 02/2024",
+      description:
+        "Exclusive laptop repair and sales center delivering value and quality service.",
+    },
+    {
+      title: "Frontend Developer",
+      organization: "Biztechnosys Infotech Pvt Ltd",
+      projectName: "Angadi’s Foundation",
+      projectType: "Education & Healthcare NGO",
+      website: "https://olivedrab-owl-923080.hostingersite.com/",
+      period: "09/2023 - 02/2024",
+      description:
+        "Empowering rural education and providing healthcare services to senior citizens.",
+    },
+     {
+      title: "Frontend Developer",
+      organization: "Self-Developed",
+      projectName: "Testy Food",
+      projectType: "Food Delivery Application",
+      website: "https://testy-food-xi.vercel.app/",
+      period: "2024",
+      description:
+        "Food delivery platform with Add-to-cart and Meal filtering features.",
     },
     {
       title: "Junior Frontend Developer",
@@ -37,26 +87,8 @@ const resumeData = {
       description:
         "Developed patient platform serving 10K+ users. Built responsive UI and telehealth features. 95% user satisfaction. Tech: React.js, Tailwind CSS, WebRTC.",
     },
-    {
-      title: "Frontend Developer",
-      organization: "Biztechnosys Infotech Pvt Ltd",
-      projectName: "Dreamspark Foundation",
-      projectType: "NGO Management System",
-      website: "https://dreamsparkfoundation.org/",
-      period: "03/2023 - 05/2023",
-      description:
-        "Created donor management system. Implemented tracking and reporting features. Increased engagement by 45%. Tech: React.js, Chart.js, Firebase.",
-    },
-    {
-      title: "Frontend Developer",
-      organization: "Self-Developed",
-      projectName: "Food Delivery Application",
-      projectType: "Food Delivery Application",
-      website: "https://food-delivery-appsui.netlify.app",
-      period: "2024",
-      description:
-        "Built full-stack food delivery platform. Features: order tracking, payments, route optimization. 1000+ downloads, 4.5/5 rating. Tech: React.js, Node.js, MongoDB.",
-    },
+    
+   
   ],
   education: [
     {
@@ -68,13 +100,13 @@ const resumeData = {
     },
     {
       title: "12th Standard",
-      institution: "Shri Vigyan Hr Sec School, Lovkush Nagar",
+      institution: "Sri Vigyan H S School, Laundi, Chhatarpur(M.P.)",
       period: "2018-2019",
       // description: "Core focus on programming fundamentals, data structures, and web development."
     },
     {
       title: "10th Standard",
-      institution: "Shri Vigyan Hr Sec School, Lovkush Nagar",
+      institution: "Sri Vigyan H S School, Laundi, Chhatarpur(M.P.)",
       period: "2016-2017",
       // description: "Intensive 12-week program covering full-stack web development fundamentals."
     },
@@ -166,9 +198,9 @@ function MyResume() {
                   // style={{ cursor: "pointer" }}
                 >
                   {/* <h5 className="card-title">{job.title}</h5> */}
-                  <p className="card-text">
-                    <strong>ProjectName : </strong> {job.projectName}
-                  </p>
+                  <div className="card-text">
+                    <h6 className="mb-1 me-2">ProjectName : </h6><p className="mb-1">{job.projectName}</p>
+                  </div>
                   {/* <p className="card-text"> <strong>Organization : </strong> {job.organization}</p>
                   <p className="card-text"> <strong>ProjectType : </strong> {job.projectType}</p> */}
                   {/* <p className="card-text">Website : <a href={job.website} target="_blank" rel="noopener noreferrer" className="card-text">{job.website}</a></p>

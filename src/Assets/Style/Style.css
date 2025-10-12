@@ -592,6 +592,9 @@ border: 1px solid color-mix(in srgb, var(--primary-color) 30%, transparent);
 #resume .card-text {
   font-size: 1rem;
   color: var(--text-color-2);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 #resume .card-text strong{
   color: var(--text-color);

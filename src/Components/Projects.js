@@ -132,60 +132,59 @@ const Projects = () => {
       </div>
 
       {/* ✅ Mobile Slider with Arrows */}
-<div className="d-md-none position-relative">
-  <Swiper
-    spaceBetween={20}
-    navigation={{
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    }}
-    autoplay={{
-      delay: 3000, // 3 seconds
-      disableOnInteraction: false, // keeps autoplay after user swipes
-    }}
-    modules={[Navigation, Autoplay]}
-    loop={true}
-    className="projectSwiper"
-  >
-    {projects.map((project, index) => (
-      <SwiperSlide key={index}>
-        <div
-          className="card projects-card overflow-hidden flex-fill position-relative"
-          onClick={() => handleProjectClick(project)}
-          style={{ cursor: "pointer" }}
+      <div className="d-md-none position-relative">
+        <Swiper
+          spaceBetween={20}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
+          autoplay={{
+            delay: 3000, // 3 seconds
+            disableOnInteraction: false, // keeps autoplay after user swipes
+          }}
+          modules={[Navigation, Autoplay]}
+          loop={true}
+          className="projectSwiper"
         >
-          <img
-            src={project.img || placeholder}
-            className="card-img-top"
-            alt={project.title}
-          />
-          <div className="overlay d-flex flex-column justify-content-center align-items-center">
-            <h5 className="text-center">{project.title}</h5>
-            <p className="text-center mb-3">{project.type}</p>
-            <a
-              href={project.website}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="port-btns"
-              onClick={(e) => e.stopPropagation()}
-            >
-              Live Demo
-            </a>
-          </div>
+          {projects.map((project, index) => (
+            <SwiperSlide key={index}>
+              <div
+                className="card projects-card overflow-hidden flex-fill position-relative"
+                onClick={() => handleProjectClick(project)}
+                style={{ cursor: "pointer" }}
+              >
+                <img
+                  src={project.img || placeholder}
+                  className="card-img-top"
+                  alt={project.title}
+                />
+                <div className="overlay d-flex flex-column justify-content-center align-items-center">
+                  <h5 className="text-center">{project.title}</h5>
+                  <p className="text-center mb-3">{project.type}</p>
+                  <a
+                    href={project.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="port-btns"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    Live Demo
+                  </a>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+
+        {/* Custom Arrow Buttons */}
+        <div className="swiper-button-prev custom-swiper-btn">
+          <i className="fa-solid fa-chevron-left"></i>
         </div>
-      </SwiperSlide>
-    ))}
-  </Swiper>
-
-  {/* Custom Arrow Buttons */}
-  <div className="swiper-button-prev custom-swiper-btn">
-    <i className="fa-solid fa-chevron-left"></i>
-  </div>
-  <div className="swiper-button-next custom-swiper-btn">
-    <i className="fa-solid fa-chevron-right"></i>
-  </div>
-</div>
-
+        <div className="swiper-button-next custom-swiper-btn">
+          <i className="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
 
       {/* ✅ Modal Section */}
       <div
