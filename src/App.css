@@ -27,7 +27,7 @@
   --card-text-color: #fff;
   --card-border-color: #0a0a1b;
   --card-border-hover-color: #5d3af3;
-  --card-overlay-bg-color: #00000094;
+  --card-overlay-bg-color: #000000a2;
   --card-shadow:
     0 10px 25px rgba(0, 0, 0, 0.6),
     0 5px 15px rgba(93, 58, 243, 0.15);
@@ -104,7 +104,7 @@
   --card-text-color: #1d1d1d;
   --card-border-color: #ddd;
   --card-border-hover-color: #5d3af3;
-  --card-overlay-bg-color: #00000060;
+  --card-overlay-bg-color: #000000ad;
 
   --social-bg-color: #5d3af3;
   --social-icon-color: #fff;

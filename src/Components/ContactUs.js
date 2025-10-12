@@ -93,7 +93,7 @@ function ContactUs() {
 
   return (
     <>
-      <div id="contactform" className="container-fluid py-5 mb-5">
+      <div id="contactform" className="container-fluid py-3 py-md-5 mb-5">
         <h2 className="text-center mb-4">Contact With Me</h2>
         <div className="row">
           <div className="col-lg-3" ref={infoRef}>

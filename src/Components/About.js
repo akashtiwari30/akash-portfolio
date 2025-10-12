@@ -57,7 +57,7 @@ function About() {
   return (
     <>
       <div className="container-fluid my-4" id="about">
-        <h2 className="section-title">About Me</h2>
+        <h2 className="section-title text-center">About Me</h2>
         <div className="row">
           <div className="col-lg-12">
             <div className="d-flex align-items-top">

@@ -145,8 +145,8 @@ function MyResume() {
 
   return (
     <>
-      <div className="container" id="resume">
-        <h2 className="section-titl text-center my-4" style={{ top: "4.5rem" }}>
+      <div className="container-fluid" id="resume">
+        <h2 className="section-titl text-center my-4 mb-2 mb-md-4" style={{ top: "4.5rem" }}>
           My Resume
         </h2>
 
