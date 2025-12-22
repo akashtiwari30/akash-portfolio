@@ -63,13 +63,13 @@ const Hero = () => {
 
     // Animation for i-flip
     tl.to(".i-flip1", {
-      delay: 0.8,
-      duration: 2.3,
+      delay: 1.4,
+      duration: 4.3,
       opacity: 0,
       rotateX: 180,
       repeat: -1, // it is use to repeat the animation infinite times.
       yoyo: true, // it is use to repeat the animation in reverse.
-      ease: "power4.out",
+      ease: "power6.out",
     });
     tl.to(".i-flip2", {
       delay: 0.8,
@@ -204,11 +204,12 @@ const Hero = () => {
               </span>
             </h1>
             <h3 className="mt-2 design-role">Frontend <span className="developer">Developer</span></h3>
-            <p className="mt-4 description">
+            {/* <p className="mt-4 description">
               I create beautiful and functional websites with modern
               technologies, and user-friendly websites With a keen eye for
               design.
-            </p>
+            </p> */}
+            <p className="mt-4 description">I develop <strong>scalable, responsive, user-friendly web applications</strong> using modern frontend technologies, with a strong focus on performance, usability, and clean UI implementation.</p>
 
             <div className="row align-items-center">
               <div className="col-lg-4">
@@ -222,14 +223,23 @@ const Hero = () => {
               </div>
               <div className="col-lg-8 social-icons mt-4">
                 <div className="horizontal-line"></div>
-                <a
+                {/* <a
                   href="https://github.com/YOUR_GITHUB_USERNAME"
                   title="Github"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <i class="fa-brands fa-github"></i>
+                </a> */}
+                <a
+                  href="https://wa.me/917247464732"
+                  title="WhatsApp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-whatsapp"></i>
                 </a>
+
                 <a
                   href="https://www.linkedin.com/in/akash-tiwari-b79198233"
                   title="Linkedin"

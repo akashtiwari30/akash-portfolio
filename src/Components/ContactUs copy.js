@@ -1,77 +1,14 @@
 import { useGSAP } from "@gsap/react";
-import React, { useRef, useState } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import emailjs from "@emailjs/browser";
+import React, { useRef, useState } from "react";
+
 gsap.registerPlugin(ScrollTrigger);
 
 function ContactUs() {
   // Add refs for animation targets
   const formRef = useRef(null);
   const infoRef = useRef(null);
-
-
-  const [formData, setFormData] = useState({
-    name: "",
-    phone: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
-
-  const [loading, setLoading] = useState(false);
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-  const sendEmail = (e) => {
-    e.preventDefault();
-    setLoading(true);
-
-    emailjs
-      .send(
-        "service_56st1pc",
-        "template_a4f8tjf",
-        {
-          name: formData.name,
-          phone: formData.phone,
-          email: formData.email,
-          subject: formData.subject,
-          message: formData.message,
-        },
-        "8NwQPook4mjIu491d"
-      )
-      .then(() => {
-        alert("Message sent successfully!");
-        setFormData({
-          name: "",
-          phone: "",
-          email: "",
-          subject: "",
-          message: "",
-        });
-        setLoading(false);
-      })
-      .catch((err) => {
-        console.error(err);
-        setLoading(false);
-        sendWhatsAppFallback(); // 👇 fallback
-      });
-  };
-  const sendWhatsAppFallback = () => {
-    const phoneNumber = "917247464732"; // country code + number (no +, no spaces)
-    const text = `Hello Akash,%0A
-      Name: ${formData.name}%0A
-      Phone: ${formData.phone}%0A
-      Email: ${formData.email}%0A
-      Subject: ${formData.subject}%0A
-      Message: ${formData.message}`;
-
-    const whatsappURL = `https://wa.me/${phoneNumber}?text=${text}`;
-    window.open(whatsappURL, "_blank");
-  };
-
-
 
   // Add GSAP animations
   useGSAP(() => {
@@ -155,6 +92,45 @@ function ContactUs() {
     }
   };
 
+
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const sendWhatsApp = (e) => {
+    e.preventDefault();
+
+    const { name, phone, email, subject, message } = formData;
+
+    const text = encodeURIComponent(
+      `New Portfolio Contact 🚀
+
+        Name: ${name}
+        Phone: ${phone}
+        Email: ${email}
+        Subject: ${subject}
+        Message: ${message}`
+            );
+
+    window.open(
+      `https://wa.me/918827803902?text=${text}`,
+      "_blank"
+    );
+  };
+
+
   return (
     <>
       <div id="contactform" className="container-fluid py-3 py-md-5 mb-5">
@@ -178,7 +154,7 @@ function ContactUs() {
           </div>
 
           <div className="col-lg-9" ref={formRef}>
-            <form className="contact-form" onSubmit={sendEmail}>
+            <form className="contact-form" onSubmit={sendWhatsApp}>
               <div className="row mb-3">
                 <div className="col-md-6">
                   <input
@@ -190,6 +166,7 @@ function ContactUs() {
                     onChange={handleChange}
                     required
                   />
+
                 </div>
                 <div className="col-md-6">
                   <input
@@ -201,6 +178,7 @@ function ContactUs() {
                     onChange={handleChange}
                     required
                   />
+
                 </div>
               </div>
               <div className="row mb-3">
@@ -213,9 +191,9 @@ function ContactUs() {
                     value={formData.email}
                     onChange={handleChange}
                   />
+
                 </div>
                 <div className="col-md-6">
-
                   <input
                     type="text"
                     name="subject"
@@ -224,6 +202,7 @@ function ContactUs() {
                     value={formData.subject}
                     onChange={handleChange}
                   />
+
                 </div>
               </div>
 
@@ -237,14 +216,13 @@ function ContactUs() {
                   onChange={handleChange}
                   required
                 ></textarea>
+
               </div>
               <div className="text-center">
-                <button className="kave-btn" type="submit" disabled={loading}>
+                <button className="kave-btn">
                   <span className="kave-line"></span>
-                  {loading ? "Sending..." : "Send Message"}
-                  <i className="fa-brands fa-telegram"></i>
+                  Send Message <i className="fa-brands fa-telegram"></i>
                 </button>
-
               </div>
             </form>
           </div>

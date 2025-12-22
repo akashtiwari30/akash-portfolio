@@ -70,6 +70,47 @@ function Navbar() {
     }
   }, [theme]);
 
+
+  const navItems = [
+    { label: "Home", id: "hero" },
+    { label: "About Us", id: "about" },
+    { label: "Skills", id: "skills" },
+    { label: "Projects", id: "projects" },
+    { label: "Resume", id: "resume" },
+    { label: "Let's Talk", id: "contactform" },
+  ];
+
+useEffect(() => {
+  
+  const sections = navItems
+    .map((item) => document.getElementById(item.id))
+    .filter(Boolean);
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const index = navItems.findIndex(
+            (item) => item.id === entry.target.id
+          );
+          if (index !== -1) setActiveIndex(index);
+        }
+      });
+    },
+    {
+      root: null,
+      rootMargin: "-40% 0px -50% 0px", // 🔥 key fix
+      threshold: 0,
+    }
+  );
+
+  sections.forEach((section) => observer.observe(section));
+
+  return () => observer.disconnect();
+}, [navItems]);
+
+
+
   return (
     <>
       <div id="por-navbar" className="">
@@ -114,7 +155,7 @@ function Navbar() {
             >
               {theme === "dark" ? (
                 <i key="sun" className="fa-solid fa-sun fs-4 text-warning"></i>
-                
+
               ) : (
                 <i key="moon" className="fa-solid fa-moon fs-4 text-dark"></i>
               )}
@@ -148,39 +189,24 @@ function Navbar() {
                 ></button>
               </div>
               <div className="offcanvas-body">
-                <ul className="navbar-nav  flex-grow-1">
-                  {[
-                    { label: "Home", href: "#hero" },
-                    { label: "About Us", href: "#about" },
-                    { label: "Skills", href: "#skills" },
-                    { label: "Projects", href: "#projects" },
-                    { label: "Resume", href: "#resume" },
-                    // { label: "Services", href: "#services" },
-                    {
-                      label: "Let's Talk",
-                      href: "#contactform",
-                      isButton: true,
-                    },
-                  ].map((item, index) => (
+                <ul className="navbar-nav flex-grow-1">
+                  {navItems.map((item, index) => (
                     <li
-                      key={index}
-                      className={`nav-item ${
-                        activeIndex === index ? "active" : ""
-                      }`}
+                      className={`nav-item ${activeIndex === index ? "active" : ""}`}
                       ref={(el) => (navItemsRef.current[index] = el)}
                     >
                       <a
-                        className={`nav-link ${
-                          item.isButton ? "port-btns " : ""
-                        }`}
-                        href={item.href}
+                        className={`nav-link ${item.isButton ? "port-btns" : ""}`}
+                        href={`#${item.id}`}
                         onClick={() => setActiveIndex(index)}
                       >
                         {item.label}
                       </a>
                     </li>
+
                   ))}
                 </ul>
+
               </div>
             </div>
           </div>

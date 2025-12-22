@@ -10,9 +10,9 @@ const resumeData = {
     {
       title: "Frontend Developer",
       organization: "Biztechnosys Infotech Pvt Ltd",
-      projectName: "CRM Doctor Website",
+      projectName: "CRM Doctor",
       projectType: "CRM Doctor",
-      website: "https://green-lobster-463551.hostingersite.com/",
+      website: "crm-doctor.com",
       period: "03/2024 - Present",
       description:
         "CRM Doctor Website showcasing multiple dashboard variations for cloning.",
@@ -183,7 +183,7 @@ function MyResume() {
         </h2>
 
         <div className="row section-padding">
-          <div className="col-md-6">
+          <div className="col-md-6 d-none">
             <div className="section-title">Job Experience</div>
             <div
               className="timeline custom-tooltip"
@@ -211,7 +211,7 @@ function MyResume() {
             </div>
           </div>
 
-          <div className="col-md-6">
+          <div className="col-md-12">
             <div className="section-title">Education Quality</div>
             <div className="timeline" ref={rightTimelineRef}>
               {resumeData.education.map((edu, index) => (

@@ -63,7 +63,7 @@ function About() {
             <div className="d-flex align-items-top">
               <div className="horizontal-line"></div>
               <div>
-                <p className="about-text">
+                {/* <p className="about-text">
                   I’m a Frontend Developer with 2 years of hands-on experience in
                   building responsive, high-performance web applications using
                   React.js, JavaScript, HTML, CSS, Bootstrap, Tailwind, WordPress. I
@@ -75,18 +75,12 @@ function About() {
                   Vtiger CRM UI, optimizing its user experience and overall
                   visual consistency. I thrive in agile environments and focus
                   on creating clean, efficient, and user-centered interfaces.
-                </p>
-                {/* <p className="about-text">
-                  Frontend Developer with close to 2 years of experience in
-                  designing, developing, and deploying responsive and
-                  interactive web applications. Delivered 5+ projects using
-                  React Js, HTML, CSS, JavaScript, Bootstrap, Tailwind,
-                  WordPress, Vtiger; Tools used:- VS Code, Spline, Git, Git Hub;
-                  optimized web performance by 35%, improved load times by 40%,
-                  and enhanced accessibility across devices. Strong expertise in
-                  UI/UX improvements, cross-browser compatibility, version
-                  control, and agile delivery.
                 </p> */}
+                <p className="about-text">
+                  I am a <strong>results-driven Frontend Developer</strong> with hands-on experience in designing and developing modern web interfaces. I have successfully delivered <strong>5+ production-ready projects,</strong> improving <strong>web performance by 35%</strong> and reducing <strong>page load times by 40%</strong> through optimized React architecture, efficient state management, and clean UI implementation.
+                </p>
+                <p className="about-text">I have contributed to <strong>Vtiger CRM UI enhancements,</strong> focusing on visual consistency, usability improvements, and responsive layouts. I enjoy transforming complex requirements into intuitive user experiences while following <strong>modern UI/UX principles, agile methodologies, and best coding practices.</strong></p>
+                <p className="about-text">I’m passionate about writing <strong>maintainable code,</strong> collaborating with teams, and continuously learning new frontend technologies.</p>
               </div>
             </div>
           </div>

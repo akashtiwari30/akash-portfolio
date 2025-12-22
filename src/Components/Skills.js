@@ -29,10 +29,12 @@ function Skills() {
     { name: 'React-js', icon: 'fa-brands fa-react', color: '#61DAFB' },
     { name: 'Bootstrap', icon: 'fa-brands fa-bootstrap', color: '#7952B3' },
     { name: 'Tailwind CSS', icon: 'bx bxl-tailwind-css', color: '#0ef' },
-    { name: 'Git', icon: 'fa-brands fa-git-alt', color: '#F05032' },
-    { name: 'GitHub', icon: 'fa-brands fa-github', color: '#F05032' },
+    { name: 'Sass', icon: 'bx bxl-sass', color: '#CC6699' },
     { name: 'WordPress', icon: 'fa-brands fa-wordpress', color: '#0ef' },
     { name: 'Gsap', icon: 'fa-solid fa-g', color: '#4B32C3' },
+    { name: 'Git', icon: 'fa-brands fa-git-alt', color: '#F05032' },
+    { name: 'GitHub', icon: 'fa-brands fa-github', color: '#F05032' },
+    { name: 'VS Code', icon: 'fa-solid fa-code', color: '#007ACC' },
     // { name: 'Vtiger UI', icon: 'fa-solid fa-g', color: '#4B32C3' },
   ];
   return (

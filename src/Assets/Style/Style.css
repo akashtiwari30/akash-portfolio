@@ -99,6 +99,10 @@ height: 100%; */
 .about-text{
   margin-top: 10px;
 }
+#hero strong,
+#about strong{
+  color: var(--primary-color);
+}
 /* ===================================   Hero Section   ================================== */
 #hero {
   margin-top: 125px;
@@ -193,6 +197,10 @@ a:hover .fa-github {
 /* LinkedIn */
 a:hover .fa-linkedin-in {
   color: var(--linkedin-hover-color);
+}
+/* whatsapp */
+a:hover .fa-whatsapp {
+  color: var(--whatsapp-hover-color);
 }
 
 /* Twitter */
