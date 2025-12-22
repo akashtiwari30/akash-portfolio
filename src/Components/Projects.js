@@ -6,7 +6,6 @@ import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 
-// ✅ Your images
 import placeholder from "../Assets/Images/placeholder.png";
 import testyfood from "../Assets/Images/testy-food.png";
 import crmdashboard from "../Assets/Images/crm-dashboard.png";
@@ -21,7 +20,7 @@ const projects = [
     title: "CRM Doctor Website",
     type: "CRM Doctor",
     tech: "HTML, CSS, JavaScript, Tailwind CSS",
-    website: "https://green-lobster-463551.hostingersite.com/",
+    website: "https://crm-doctor.com/",
     description:
       "CRM Doctor Website showcasing multiple dashboard variations for cloning.",
     img: crmdoctor,
