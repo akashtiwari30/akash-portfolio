@@ -61,12 +61,13 @@ body {
   color: var(--navbar-text-color) !important;
   padding: 0;
 }
-.navbar-toggler{
+.navbar-toggler:focus{
       /* width: 35px;
     height: 25px; */
   /* display: flex;
   justify-content: center;
   align-items: center; */
+  box-shadow: none !important;
 }
 .navbar-toggler .navbar-toggler-icon{
 /* width: 100%;
@@ -373,6 +374,7 @@ a:hover .fa-envelope {
 /* skills section */
 #skills .algorithm-card {
   background-color: var(--card-bg-color);
+  border: 1px solid var(--card-border-color);
   border-radius: 10px;
   padding: 4.6rem 2rem;
   width: 100%;
@@ -590,7 +592,7 @@ border: 1px solid color-mix(in srgb, var(--primary-color) 30%, transparent);
 
 #resume .card {
   background-color: var(--card-bg-color);
-  border: none;
+  border: 1px solid var(--card-border-color);
   color: var(--card-text-color);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   position: relative;
@@ -708,7 +710,7 @@ border: 1px solid color-mix(in srgb, var(--primary-color) 30%, transparent);
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 10;
+  z-index: 1;
   background: var(--primary-color);
   color: var(--white-color);
   width: 38px;
@@ -943,4 +945,7 @@ html, body{
   #skills .algorithm-card{
     padding: 3rem 2rem;
   }
+  #resume .card-title{
+  font-size: 1rem
+}
 }
