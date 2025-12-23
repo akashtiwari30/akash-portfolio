@@ -214,23 +214,15 @@ const Hero = () => {
             <div className="row align-items-center">
               <div className="col-lg-4">
                 <a
-                  href="#"
+                  href="https://drive.google.com/file/d/1wGQsEuYZT3QYCmpLFcsnQbzPbCI7qwBH/preview"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="download-button mt-3 ">View Resume</button>
+                  <button className="download-button mt-3">View Resume</button>
                 </a>
               </div>
               <div className="col-lg-8 social-icons mt-4">
                 <div className="horizontal-line"></div>
-                {/* <a
-                  href="https://github.com/YOUR_GITHUB_USERNAME"
-                  title="Github"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i class="fa-brands fa-github"></i>
-                </a> */}
                 <a
                   href="https://wa.me/917247464732"
                   title="WhatsApp"
