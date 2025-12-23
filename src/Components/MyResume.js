@@ -159,7 +159,7 @@ function MyResume() {
       stagger: 0.2,
       scrollTrigger: {
         trigger: "#resume",
-        start: "top 20%",
+        start: "top 70%",
         end: "bottom 20%",
         scrub: 1,
         // markers: true,

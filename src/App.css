@@ -5,7 +5,7 @@
 :root {
 
   --primary-color: #5d3af3;
-  --secondary-color: #00bfa6;
+  --secondary-color: #7860df;
   --bg-body-color: #1d1d3a;
   --primary-rgb: 93, 58, 243;
 
@@ -17,9 +17,9 @@
   --button-bg-color: #5d3af3;
   --button-text-color: #fff;
   --button-border-color: #5d3af3;
-  --button-bg-hover-color: #00bfa6;
-  --button-text-hover-color: #000;
-  --button-border-hover-color: #fff;
+  --button-bg-hover-color: #7860df;
+  --button-text-hover-color: #fff;
+  --button-border-hover-color: #7860df;
 
   --card-bg-color: #0a0a1b;
   --card-bg-color-2: #1a1a2e;
@@ -91,12 +91,12 @@
   --navbar-text-hover-color: #5d3af3;
   --navbar-border-color: #5d3af3;
 
-  --button-bg-color: #5d3af3;
+  --button-bg-color: #7860df;
   --button-text-color: #fff;
   --button-border-color: #5d3af3;
-  --button-bg-hover-color: #3ac1f3;
-  --button-text-hover-color: #000;
-  --button-border-hover-color: #3ac1f3;
+  --button-bg-hover-color: #5d3af3;
+  --button-text-hover-color: #fff;
+  --button-border-hover-color: #5d3af3;
 
   --card-bg-color: #ffffff;
   --card-bg-color-2: #f0f0f0;
@@ -106,7 +106,7 @@
   --card-border-hover-color: #5d3af3;
   --card-overlay-bg-color: #000000ad;
 
-  --social-bg-color: #5d3af3;
+  --social-bg-color: #7860df;
   --social-icon-color: #fff;
   --social-icon-color-2: #ff4c60;
 
@@ -197,17 +197,11 @@ body {
   color: var(--primary-color);
 }
 .accent-text-2 {
-  background: linear-gradient(
-    90deg,
-    var(--primary-color),
-    var(--secondary-color)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--primary-color);
 }
 
 .accent-text-3 {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 .accent-text-4 {
   color: var(--primary-color);

@@ -140,7 +140,7 @@ useEffect(() => {
               aria-label="Toggle navigation"
             >
               {/* <span className="navbar-toggler-icon"></span> */}
-              <i className="fa-solid fa-bars-staggered fs-3"></i>
+              <i className="fa-solid fa-bars-staggered fs-6"></i>
             </button>
 
             {/* Theme toggle */}
@@ -154,10 +154,10 @@ useEffect(() => {
               }
             >
               {theme === "dark" ? (
-                <i key="sun" className="fa-solid fa-sun fs-4 text-warning"></i>
+                <i key="sun" className="fa-solid fa-sun text-warning"></i>
 
               ) : (
-                <i key="moon" className="fa-solid fa-moon fs-4 text-dark"></i>
+                <i key="moon" className="fa-solid fa-moon text-light"></i>
               )}
             </button>
 

@@ -59,6 +59,7 @@ body {
   background-color: var(--navbar-bg-color) !important;
   /* padding: 10px 2rem; */
   color: var(--navbar-text-color) !important;
+  padding: 0;
 }
 .navbar-toggler{
       /* width: 35px;
@@ -74,6 +75,11 @@ height: 100%; */
 .navbar-toggler,
 .btn-close {
   background-color: var(--primary-color) !important;
+  padding: 2px 7px;
+}
+.navbar-toggler i,
+.btn-close i{
+color: var(--white-color);
 }
 .nav-link.port-btns {
   background-color: var(--button-bg-color) !important;
@@ -89,7 +95,7 @@ height: 100%; */
   border: 1px solid var(--button-border-hover-color) !important;
 }
 .navbar-brand span {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -741,9 +747,9 @@ border: 1px solid color-mix(in srgb, var(--primary-color) 30%, transparent);
 /* Theme Toggle Button */
 
 .pulse {
-    width: 40px;
-    height: 40px;
-    background: var(--primary-color); 
+    width: 35px;
+    height: 35px;
+    background: var(--button-bg-color); 
     border-radius: 50% !important;
     position: fixed;
     right: 10px;
@@ -760,7 +766,9 @@ border: 1px solid color-mix(in srgb, var(--primary-color) 30%, transparent);
     animation: animate-pulse 2s linear infinite;
     cursor: pointer;
 }
-
+.pulse i{
+  font-size: 20px;
+}
 /* Subtle Pulse Animation using primary theme color */
 @keyframes animate-pulse {
   0% {
@@ -831,6 +839,13 @@ border: 1px solid color-mix(in srgb, var(--primary-color) 30%, transparent);
   .hero-section-image {
     margin-top: 20px;
   }
+  .social-icons a{
+    width: 40px;
+    height: 40px;
+  }
+  .social-icons a i{
+    font-size: 18px;
+  }
 }
 @media (max-width: 767.98px) {
   #resume .resume-container {
@@ -844,6 +859,11 @@ border: 1px solid color-mix(in srgb, var(--primary-color) 30%, transparent);
   }
   #resume .resume-card h3 {
     font-size: 1rem;
+  }
+  .pulse{
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
   }
 }
 
@@ -883,11 +903,12 @@ border: 1px solid color-mix(in srgb, var(--primary-color) 30%, transparent);
     width: 100%;
   }
   .about-text{
-    text-align: justify;
+    text-align: center;
   }
   #resume .section-padding {
     padding: 1rem 0;
 }
+
 }
 
 @media only screen and (max-width: 400px) {
