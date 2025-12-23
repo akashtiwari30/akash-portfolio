@@ -4,6 +4,8 @@ import "../App.css";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
+
+
 function Navbar() {
   const [activeIndex, setActiveIndex] = useState(0);
 
