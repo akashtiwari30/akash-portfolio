@@ -62,24 +62,24 @@ const Hero = () => {
     });
 
     // Animation for i-flip
-    tl.to(".i-flip1", {
-      delay: 1.4,
-      duration: 4.3,
-      opacity: 0,
-      rotateX: 180,
-      repeat: -1, // it is use to repeat the animation infinite times.
-      yoyo: true, // it is use to repeat the animation in reverse.
-      ease: "power6.out",
-    });
-    tl.to(".i-flip2", {
-      delay: 0.8,
-      duration: 2.3,
-      opacity: 0,
-      rotateX: 180,
-      repeat: -1, // it is use to repeat the animation infinite times.
-      yoyo: true, // it is use to repeat the animation in reverse.
-      ease: "power4.out",
-    });
+    // tl.to(".i-flip1", {
+    //   delay: 1.4,
+    //   duration: 4.3,
+    //   opacity: 0,
+    //   rotateX: 180,
+    //   repeat: -1, // it is use to repeat the animation infinite times.
+    //   yoyo: true, // it is use to repeat the animation in reverse.
+    //   ease: "power6.out",
+    // });
+    // tl.to(".i-flip2", {
+    //   delay: 0.8,
+    //   duration: 2.3,
+    //   opacity: 0,
+    //   rotateX: 180,
+    //   repeat: -1, // it is use to repeat the animation infinite times.
+    //   yoyo: true, // it is use to repeat the animation in reverse.
+    //   ease: "power4.out",
+    // });
 
     // Geometric container animations
     gsap.from(".geometric-container", {

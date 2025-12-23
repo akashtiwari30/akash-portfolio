@@ -120,7 +120,7 @@ color: var(--white-color);
 .i-flip1,
 .i-flip2{
   color: var(--primary-color);
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 .download-button {
@@ -139,7 +139,7 @@ color: var(--white-color);
 }
 .name-first {
   display: inline-block;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.3rem;
 }
 .description {
   width: 87%;
@@ -147,7 +147,7 @@ color: var(--white-color);
 }
 .highlight span {
   display: inline-block;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.3rem;
 }
 
 .social-icons {
@@ -835,6 +835,13 @@ border: 1px solid color-mix(in srgb, var(--primary-color) 30%, transparent);
 .copy-name{
   color: var(--primary-color);
 }
+html, body{
+  scroll-behavior: smooth;
+}
+.design-role{
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
 @media (max-width: 991px) {
   .hero-section-image {
     margin-top: 20px;
@@ -845,6 +852,10 @@ border: 1px solid color-mix(in srgb, var(--primary-color) 30%, transparent);
   }
   .social-icons a i{
     font-size: 16px;
+  }
+  .design-role{
+    font-size: 19px;
+    letter-spacing: 1px;
   }
 }
 @media (max-width: 767.98px) {
