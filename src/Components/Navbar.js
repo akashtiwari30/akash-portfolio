@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect, useLayoutEffect } from "react";
+import React, { useRef, useState, useEffect, useLayoutEffect, useMemo } from "react";
 import "../Assets/Style/Style.css";
 import "../App.css";
 import { useGSAP } from "@gsap/react";
@@ -73,14 +73,15 @@ function Navbar() {
   }, [theme]);
 
 
-  const navItems = [
+  const navItems = useMemo(() => [
     { label: "Home", id: "hero" },
     { label: "About Us", id: "about" },
     { label: "Skills", id: "skills" },
     { label: "Projects", id: "projects" },
     { label: "Resume", id: "resume" },
     { label: "Let's Talk", id: "contactform" },
-  ];
+  ], []);
+  
 
 useEffect(() => {
   
@@ -118,7 +119,7 @@ useEffect(() => {
       <div id="por-navbar" className="">
         <nav className="navbar navbar-expand-lg">
           <div className="container-fluid">
-            <a className="navbar-brand" href="#" ref={navBrandRef}>
+            <a className="navbar-brand" href="#hero" ref={navBrandRef}>
               <div className="accent-text-1">
                 {["P", "o", "r", "t", "f", "o", "l", "i", "o"].map(
                   (letter, index) => (

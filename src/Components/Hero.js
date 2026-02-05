@@ -213,8 +213,15 @@ const Hero = () => {
 
             <div className="row align-items-center">
               <div className="col-lg-4">
+                {/*<a
+                  href="https://drive.google.com/file/d/1wGQsEuYZT3QYCmpLFcsnQbzPbCI7qwBH/preview"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="download-button mt-3">View Resume</button>
+                </a>*/}
                 <a
-                  href="https://drive.google.com/file/d/1wGQsEuYZT3QYCmpLFcsnQbzPbCI7qwBH/previeww"
+                  href="https://drive.google.com/file/d/1GzIMC6U0cgqTK9G2Bfdemv1sQm9GaZo7/view"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
