@@ -214,7 +214,7 @@ const Hero = () => {
             <div className="row align-items-center">
               <div className="col-lg-4">
                 <a
-                  href="https://drive.google.com/file/d/1wGQsEuYZT3QYCmpLFcsnQbzPbCI7qwBH/preview"
+                  href="https://drive.google.com/file/d/1wGQsEuYZT3QYCmpLFcsnQbzPbCI7qwBH/previeww"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

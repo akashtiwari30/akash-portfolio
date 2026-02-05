@@ -76,6 +76,7 @@ function About() {
                   visual consistency. I thrive in agile environments and focus
                   on creating clean, efficient, and user-centered interfaces.
                 </p> */}
+
                 <p className="about-text">
                   <strong>results-driven Frontend Web Developer</strong> with nearly 2 years of hands-on experience in developing modern web interfaces. I have successfully delivered <strong>5+ production-ready projects,</strong> improving <strong>web performance by 35%</strong> and reducing <strong>page load times by 40%</strong> through optimized React architecture, efficient state management, and clean UI implementation.
                 </p>
