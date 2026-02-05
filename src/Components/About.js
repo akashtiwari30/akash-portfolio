@@ -77,7 +77,7 @@ function About() {
                   on creating clean, efficient, and user-centered interfaces.
                 </p> */}
                 <p className="about-text">
-                  I am a <strong>results-driven Frontend Developer</strong> with hands-on experience in designing and developing modern web interfaces. I have successfully delivered <strong>5+ production-ready projects,</strong> improving <strong>web performance by 35%</strong> and reducing <strong>page load times by 40%</strong> through optimized React architecture, efficient state management, and clean UI implementation.
+                  <strong>results-driven Frontend Web Developer</strong> with nearly 2 years of hands-on experience in developing modern web interfaces. I have successfully delivered <strong>5+ production-ready projects,</strong> improving <strong>web performance by 35%</strong> and reducing <strong>page load times by 40%</strong> through optimized React architecture, efficient state management, and clean UI implementation.
                 </p>
                 <p className="about-text">I have contributed to <strong>Vtiger CRM UI enhancements,</strong> focusing on visual consistency, usability improvements, and responsive layouts. I enjoy transforming complex requirements into intuitive user experiences while following <strong>modern UI/UX principles, agile methodologies, and best coding practices.</strong></p>
                 <p className="about-text">I’m passionate about writing <strong>maintainable code,</strong> collaborating with teams, and continuously learning new frontend technologies.</p>
