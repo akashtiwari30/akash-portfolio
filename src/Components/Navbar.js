@@ -81,36 +81,36 @@ function Navbar() {
     { label: "Resume", id: "resume" },
     { label: "Let's Talk", id: "contactform" },
   ], []);
-  
 
-useEffect(() => {
-  
-  const sections = navItems
-    .map((item) => document.getElementById(item.id))
-    .filter(Boolean);
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const index = navItems.findIndex(
-            (item) => item.id === entry.target.id
-          );
-          if (index !== -1) setActiveIndex(index);
-        }
-      });
-    },
-    {
-      root: null,
-      rootMargin: "-40% 0px -50% 0px", // 🔥 key fix
-      threshold: 0,
-    }
-  );
+  useEffect(() => {
 
-  sections.forEach((section) => observer.observe(section));
+    const sections = navItems
+      .map((item) => document.getElementById(item.id))
+      .filter(Boolean);
 
-  return () => observer.disconnect();
-}, [navItems]);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const index = navItems.findIndex(
+              (item) => item.id === entry.target.id
+            );
+            if (index !== -1) setActiveIndex(index);
+          }
+        });
+      },
+      {
+        root: null,
+        rootMargin: "-40% 0px -50% 0px", // 🔥 key fix
+        threshold: 0,
+      }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => observer.disconnect();
+  }, [navItems]);
 
 
 
@@ -119,7 +119,11 @@ useEffect(() => {
       <div id="por-navbar" className="">
         <nav className="navbar navbar-expand-lg">
           <div className="container-fluid">
-            <a className="navbar-brand" href="#hero" ref={navBrandRef}>
+            <button
+              className="navbar-brand btn btn-link p-0"
+              ref={navBrandRef}
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            >
               <div className="accent-text-1">
                 {["P", "o", "r", "t", "f", "o", "l", "i", "o"].map(
                   (letter, index) => (
@@ -133,7 +137,7 @@ useEffect(() => {
                   )
                 )}
               </div>
-            </a>
+            </button>
             <button
               className="navbar-toggler"
               type="button"

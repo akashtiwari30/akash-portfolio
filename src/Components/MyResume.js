@@ -168,12 +168,7 @@ function MyResume() {
     });
   });
 
-  // Add modal handling
-  // const handleJobClick = (job) => {
-  //   setSelectedJob(job);
-  //   const modal = new Modal(document.getElementById("jobModal"));
-  //   modal.show();
-  // };
+ 
 
   return (
     <>

@@ -143,17 +143,7 @@ function ContactUs() {
     },
   ];
 
-  // const getLink = (item) => {
-  //   switch (item.type) {
-  //     case "link":
-  //       return item.value;
-  //     case "mailto":
-  //       return `mailto:${item.value}`;
-  //     case "text":
-  //     default:
-  //       return null;
-  //   }
-  // };
+ 
 
   return (
     <>
