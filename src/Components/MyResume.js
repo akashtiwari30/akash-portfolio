@@ -2,7 +2,7 @@ import { useGSAP } from "@gsap/react";
 import React, { useRef, useState } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import { Modal } from "bootstrap";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const resumeData = {
@@ -118,7 +118,7 @@ function MyResume() {
   const leftTimelineRef = useRef(null);
   const rightTimelineRef = useRef(null);
   const mainResumeRef = useRef(null);
-  const [selectedJob, setSelectedJob] = useState(null);
+
 
   // Add GSAP animation
   useGSAP(() => {
