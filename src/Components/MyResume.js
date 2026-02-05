@@ -221,62 +221,7 @@ function MyResume() {
         </div>
       </div>
 
-      {/* Add Modal */}
-      <div
-        className="modal fade"
-        id="jobModal"
-        tabIndex="-1"
-        aria-labelledby="jobModalLabel"
-        aria-hidden="true"
-      >
-        <div className="modal-dialog modal-dialog-centered">
-          <div className="modal-content">
-            <div className="modal-header">
-              <h4 className="modal-title" id="jobModalLabel">
-                {selectedJob?.title}
-              </h4>
-              <button
-                type="button"
-                className="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div className="modal-body jobmodal-body">
-              {selectedJob && (
-                <>
-                  <div className="d-flex justify-content-between">
-                    <h6>Organization:</h6>
-                    <p>{selectedJob.organization}</p>
-                  </div>
-                  <div className="d-flex justify-content-between">
-                    <h6>ProjectName:</h6>
-                    <p>{selectedJob.projectName}</p>
-                  </div>
-                  <div className="d-flex justify-content-between">
-                    <h6>ProjectType:</h6>
-                    <p>{selectedJob.projectType}</p>
-                  </div>
-                  <div className="d-flex justify-content-between">
-                    <h6>Website:</h6>
-                    <p>
-                      <a
-                        href={selectedJob.website}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        {selectedJob.website}
-                      </a>
-                    </p>
-                  </div>
-                  <h6>Description:</h6>
-                  <p>{selectedJob.description}</p>
-                </>
-              )}
-            </div>
-          </div>
-        </div>
-      </div>
+    
     </>
   );
 }
