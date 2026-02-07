@@ -188,6 +188,7 @@ const Projects = () => {
                   className="card-img-top"
                   alt={project.title}
                 />
+                <p className="project-live">{project.live}</p>
                 <div className="overlay d-flex flex-column justify-content-center align-items-center">
                   <h5 className="text-center">{project.title}</h5>
                   <p className="text-center mb-3">{project.type}</p>
@@ -232,7 +233,7 @@ const Projects = () => {
               ></button>
             </div>
 
-            <div className="modal-body p-4">
+            <div className="modal-body py-4 px-0">
               <div className="row">
                 <div className="col-md-5 mb-3 mb-md-0">
                   <img
