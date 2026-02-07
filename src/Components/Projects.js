@@ -24,7 +24,7 @@ const projects = [
     description:
       "Developed enterprise-level, CMS-driven web components using React.js, Next.js, and Sitecore XM Cloud Headless (JSS). Implemented multilingual support, optimized performance, and resolved complex rendering issues across environments.",
     img: '',
-    live: 'Not Live',
+    live: 'In Progress',
     projectType: ''
   },
   {
@@ -79,7 +79,7 @@ const projects = [
     description:
       "Delivered a responsive business website focusing on usability, performance, and content presentation.",
     img: techrefurbyard,
-    live: 'Not Live',
+    live: 'Live',
     projectType: ''
   },
   {
@@ -101,7 +101,7 @@ projectType: ''
     description:
       "Built a React-based food ordering application with add-to-cart functionality and meal filtering features.",
     img: testyfood,
-    live: 'live',
+    live: 'vercel live',
     projectType: 'Personal Project'
   },
 ];
