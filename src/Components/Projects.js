@@ -17,47 +17,57 @@ import angadi from "../Assets/Images/angadi.png";
 
 const projects = [
   {
+    title: "Honda Middle East & UAE Website",
+    type: "Enterprise Headless CMS Platform",
+    tech: "HTML, CSS, React.js, Next.js, TypeScript, Sitecore XM Cloud (JSS)",
+    website: "#",
+    description:
+      "Developed enterprise-level, CMS-driven web components using React.js, Next.js, and Sitecore XM Cloud Headless (JSS). Implemented multilingual support, optimized performance, and resolved complex rendering issues across environments.",
+    img: '',
+  },
+  {
     title: "CRM Doctor Website",
-    type: "CRM Doctor",
+    type: "Customer-Facing Web Application",
     tech: "HTML, CSS, JavaScript, Tailwind CSS",
     website: "https://crm-doctor.com/",
     description:
-      "CRM Doctor Website showcasing multiple dashboard variations for cloning.",
+      "Developed and enhanced responsive UI components for a customer-facing platform, focusing on usability, visual consistency, and performance improvements.",
     img: crmdoctor,
   },
   {
-    title: "CRM Dashboard",
-    type: "Vtiger CRM",
+    title: "Vtiger CRM Dashboard",
+    type: "CRM Platform UI",
     tech: "HTML, CSS, JavaScript",
     website: "https://central.crm-doctor.com/uistaging/",
-    description: "Optimized CRM dashboard with an enhanced UI experience.",
+    description:
+      "Customized and optimized CRM dashboard UI to improve responsiveness, usability, and overall application stability.",
     img: crmdashboard,
   },
   {
     title: "Biz Infra",
-    type: "Facility Management",
+    type: "Facility Management Website",
     tech: "HTML, CSS, JavaScript, Bootstrap",
     website: "https://bizinfratech.in/",
     description:
-      "Professional facility management services website for Biz Infra group.",
+      "Built responsive, cross-browser compatible web pages and integrated frontend components with CMS-driven content updates.",
     img: bizinfra,
   },
   {
     title: "Dream Sparks Foundation",
-    type: "NGO Organization",
+    type: "NGO Website",
     tech: "WordPress",
     website: "https://dreamsparkfoundation.org/",
     description:
-      "Non-profit organization working for education and healthcare of the underprivileged.",
+      "Developed an NGO website with clear navigation, accessible forms, and improved content structure to enhance user engagement.",
     img: dreamsparks,
   },
   {
     title: "Tech Refurb Yard",
-    type: "Laptop Repair & Sales",
+    type: "Service Business Website",
     tech: "WordPress",
     website: "https://techrefurbyard.com/",
     description:
-      "Exclusive laptop repair and sales center delivering value and quality service.",
+      "Delivered a responsive business website focusing on usability, performance, and content presentation.",
     img: techrefurbyard,
   },
   {
@@ -66,19 +76,20 @@ const projects = [
     tech: "WordPress",
     website: "https://olivedrab-owl-923080.hostingersite.com/",
     description:
-      "Empowering rural education and providing healthcare services to senior citizens.",
+      "Created a content-driven NGO website supporting education and healthcare initiatives with improved layout and accessibility.",
     img: angadi,
   },
   {
     title: "Testy Food",
-    type: "Food Delivery App",
+    type: "Food Ordering Web Application",
     tech: "HTML, CSS, Tailwind CSS, React.js",
     website: "https://testy-food-xi.vercel.app/",
     description:
-      "Food delivery platform with Add-to-cart and Meal filtering features.",
+      "Built a React-based food ordering application with add-to-cart functionality and meal filtering features.",
     img: testyfood,
   },
 ];
+
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -103,8 +114,6 @@ const Projects = () => {
             <div className="col-md-6 col-lg-4 d-flex" key={index}>
               <div
                 className="card projects-card overflow-hidden flex-fill position-relative"
-                onClick={() => handleProjectClick(project)}
-                style={{ cursor: "pointer" }}
               >
                 <img
                   src={project.img || placeholder}
@@ -114,15 +123,21 @@ const Projects = () => {
                 <div className="overlay d-flex flex-column justify-content-center align-items-center">
                   <h5 className="text-center">{project.title}</h5>
                   <p className="text-center mb-3">{project.type}</p>
-                  <a
+                  {/* <a
                     href={project.website}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="port-btns"
                     onClick={(e) => e.stopPropagation()}
                   >
-                    Live Demo
-                  </a>
+                    View Details
+                  </a> */}
+                  <button
+                    className="port-btns"
+                    onClick={() => handleProjectClick(project)}
+                  >
+                    View Details
+                  </button>
                 </div>
               </div>
             </div>
@@ -150,8 +165,6 @@ const Projects = () => {
             <SwiperSlide key={index}>
               <div
                 className="card projects-card overflow-hidden flex-fill position-relative"
-                onClick={() => handleProjectClick(project)}
-                style={{ cursor: "pointer" }}
               >
                 <img
                   src={project.img || placeholder}
@@ -161,15 +174,12 @@ const Projects = () => {
                 <div className="overlay d-flex flex-column justify-content-center align-items-center">
                   <h5 className="text-center">{project.title}</h5>
                   <p className="text-center mb-3">{project.type}</p>
-                  <a
-                    href={project.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <button
                     className="port-btns"
-                    onClick={(e) => e.stopPropagation()}
+                    onClick={() => handleProjectClick(project)}
                   >
-                    Live Demo
-                  </a>
+                    View Details
+                  </button>
                 </div>
               </div>
             </SwiperSlide>
@@ -225,14 +235,26 @@ const Projects = () => {
                       {selectedProject?.tech}
                     </span>
                   </p>
-                  <a
+                  {/* <a
                     href={selectedProject?.website}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="port-btns text-center btn-sm mt-auto"
                   >
                     Visit Project
-                  </a>
+                  </a> */}
+
+                  {selectedProject?.website && selectedProject.website !== "#" && (
+                    <a
+                      href={selectedProject.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="port-btns text-center btn-sm mt-auto"
+                    >
+                      Visit Project
+                    </a>
+                  )}
+
                 </div>
               </div>
             </div>

@@ -77,11 +77,24 @@ function About() {
                   on creating clean, efficient, and user-centered interfaces.
                 </p> */}
 
-                <p className="about-text">
+                {/* <p className="about-text">
                   <strong>results-driven Frontend Web Developer</strong> with nearly 2 years of hands-on experience in developing modern web interfaces. I have successfully delivered <strong>5+ production-ready projects,</strong> improving <strong>web performance by 35%</strong> and reducing <strong>page load times by 40%</strong> through optimized React architecture, efficient state management, and clean UI implementation.
                 </p>
                 <p className="about-text">I have contributed to <strong>Vtiger CRM UI enhancements,</strong> focusing on visual consistency, usability improvements, and responsive layouts. I enjoy transforming complex requirements into intuitive user experiences while following <strong>modern UI/UX principles, agile methodologies, and best coding practices.</strong></p>
-                <p className="about-text">I’m passionate about writing <strong>maintainable code,</strong> collaborating with teams, and continuously learning new frontend technologies.</p>
+                <p className="about-text">I’m passionate about writing <strong>maintainable code,</strong> collaborating with teams, and continuously learning new frontend technologies.</p> */}
+
+                <p className="about-text">
+                  <strong>Frontend Web Developer</strong> with nearly 2 years of experience building scalable, high-performance, and CMS-driven web applications using <strong>React.js, Next.js, TypeScript,</strong> and modern JavaScript. I specialize in creating reusable components, implementing data-driven UI layouts, and optimizing application performance through efficient rendering and clean architecture.
+                </p>
+
+                <p className="about-text">
+                  I have worked on enterprise and customer-facing projects, including <strong>Sitecore Headless (XM Cloud JSS)</strong> platforms and <strong>Vtiger CRM UI modernization</strong>, focusing on responsive design, cross-browser compatibility, accessibility, and seamless API integration. I enjoy turning complex business requirements into intuitive and reliable user experiences.
+                </p>
+
+                <p className="about-text">
+                  I’m passionate about writing <strong>maintainable, scalable code</strong>, collaborating in Agile teams, and continuously improving my frontend skills while delivering user-focused web solutions.
+                </p>
+
               </div>
             </div>
           </div>

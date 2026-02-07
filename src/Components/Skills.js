@@ -23,32 +23,37 @@ function Skills() {
   });
 
   const skillsList = [
+    { name: 'JavaScript', icon: 'fa-brands fa-js', color: '#F7DF1E' },
+    { name: 'TypeScript', icon: 'fa-solid fa-code', color: '#3178C6' },
+    { name: 'React.js', icon: 'fa-brands fa-react', color: '#61DAFB' },
+    { name: 'Next.js', icon: 'fa-solid fa-n', color: '#000000' },
     { name: 'HTML5', icon: 'fa-brands fa-html5', color: '#E34F26' },
     { name: 'CSS3', icon: 'fa-brands fa-css', color: '#1572B6' },
-    { name: 'JavaScript', icon: 'fa-brands fa-js', color: '#F7DF1E' },
-    { name: 'React-js', icon: 'fa-brands fa-react', color: '#61DAFB' },
     { name: 'Bootstrap', icon: 'fa-brands fa-bootstrap', color: '#7952B3' },
     { name: 'Tailwind CSS', icon: 'bx bxl-tailwind-css', color: '#0ef' },
-    { name: 'Sass', icon: 'bx bxl-sass', color: '#CC6699' },
-    { name: 'WordPress', icon: 'fa-brands fa-wordpress', color: '#0ef' },
-    { name: 'Gsap', icon: 'fa-solid fa-g', color: '#4B32C3' },
+    { name: 'Sass / SCSS', icon: 'bx bxl-sass', color: '#CC6699' },
+    { name: 'REST APIs', icon: 'fa-solid fa-plug', color: '#6C63FF' },
+    { name: 'Axios / Fetch API', icon: 'fa-solid fa-cloud-arrow-down', color: '#5A29E4' },
     { name: 'Git', icon: 'fa-brands fa-git-alt', color: '#F05032' },
-    { name: 'GitHub', icon: 'fa-brands fa-github', color: '#F05032' },
+    { name: 'GitHub', icon: 'fa-brands fa-github', color: '#000000' },
     { name: 'VS Code', icon: 'fa-solid fa-code', color: '#007ACC' },
+    { name: 'AOS', icon: 'fa-solid fa-a', color: '#4B32C3' },
+    { name: 'GSAP', icon: 'fa-solid fa-g', color: 'green' },
+    { name: 'WordPress', icon: 'fa-brands fa-wordpress', color: '#0ef' },
     // { name: 'Vtiger UI', icon: 'fa-solid fa-g', color: '#4B32C3' },
   ];
   return (
     <div id="skills" className='my-2 my-sm-3 my-md-3 my-lg-5'>
-    
-    
-    <div className="mb-3 text-center">
-<h2 className="section-title position-stick">My Skills</h2>
-<p className='mb-1'>Things I’m good at</p>
+
+
+      <div className="mb-3 text-center">
+        <h2 className="section-title position-stick">My Skills</h2>
+        <p className='mb-1'>Things I’m good at</p>
       </div>
       <div className="container-fluid  w-100 d-flex flex-column align-items-center justify-content-center" style={{
         paddingTop: "2rem"
       }}>
-        
+
         {skillsList.map((skill, index) => (
           <div
             key={index}
@@ -57,9 +62,9 @@ function Skills() {
             style={{ position: "sticky", top: "7.5rem" }}
           >
             <div className="geometric-shape">
-            <i className={skill.icon} style={{ color: skill.color }}></i>
+              <i className={skill.icon} style={{ color: skill.color }}></i>
             </div>
-           
+
             <p className="card-title">{skill.name}</p>
           </div>
         ))}
