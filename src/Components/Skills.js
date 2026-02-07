@@ -24,7 +24,7 @@ function Skills() {
 
   const skillsList = [
     { name: 'JavaScript', icon: 'fa-brands fa-js', color: '#F7DF1E' },
-    { name: 'TypeScript', icon: 'fa-solid fa-code', color: '#3178C6' },
+    { name: 'TypeScript', icon: 'devicon-typescript-plain colored', color: '#3178C6' },
     { name: 'React.js', icon: 'fa-brands fa-react', color: '#61DAFB' },
     { name: 'Next.js', icon: 'fa-solid fa-n', color: '#000000' },
     { name: 'HTML5', icon: 'fa-brands fa-html5', color: '#E34F26' },
@@ -37,8 +37,10 @@ function Skills() {
     { name: 'Git', icon: 'fa-brands fa-git-alt', color: '#F05032' },
     { name: 'GitHub', icon: 'fa-brands fa-github', color: '#000000' },
     { name: 'VS Code', icon: 'fa-solid fa-code', color: '#007ACC' },
-    { name: 'AOS', icon: 'fa-solid fa-a', color: '#4B32C3' },
-    { name: 'GSAP', icon: 'fa-solid fa-g', color: 'green' },
+    
+      { name: 'AOS Animation', icon: 'fa-solid fa-wand-magic-sparkles', color: '#4B32C3' },
+      { name: 'GSAP Animation', icon: 'fa-solid fa-bolt', color: '#88CE02' },
+    
     { name: 'WordPress', icon: 'fa-brands fa-wordpress', color: '#0ef' },
     // { name: 'Vtiger UI', icon: 'fa-solid fa-g', color: '#4B32C3' },
   ];

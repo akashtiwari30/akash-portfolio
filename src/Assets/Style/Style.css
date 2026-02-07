@@ -448,6 +448,40 @@ a:hover .fa-envelope {
 
 /* Dark theme background */
 
+
+
+/* for skills2 style css start*/
+#skills2.skills-section {
+  padding: 4rem 0;
+}
+
+#skills2 .skill-card {
+  backdrop-filter: blur(14px);
+  background: rgb(169 169 169 / 8%);
+  border-radius: 16px;
+  padding: 1.6rem 1rem;
+  text-align: center;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (hover: hover) {
+  #skills2 .skill-card:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.45);
+  }
+}
+
+#skills2 .icon-wrapper {
+  font-size: 2.5rem;
+  margin-bottom: 0.6rem;
+}
+
+
+/* for skills2  styles css end */
+
+
+
 /* for contact us */
 
 #contactform .info-item {
@@ -975,23 +1009,30 @@ body {
     padding: 0 1.4rem;
   }
 
-  .skills-grid {
+  #skills .skills-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .skill-card {
+  #skills .skill-card {
     width: 200px;
     height: 200px;
   }
+  #skills2 .skill-card{
+    padding: 1rem 0.5rem;
 
+  }
+
+  #skills2.skills-section {
+    padding: 1rem 0;
+}
   .description {
     width: 100%;
   }
 
   .about-text {
-    text-align: center;
+    text-align: justify;
   }
 
   #resume .section-padding {

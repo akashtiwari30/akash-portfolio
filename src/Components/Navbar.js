@@ -76,7 +76,7 @@ function Navbar() {
   const navItems = useMemo(() => [
     { label: "Home", id: "hero" },
     { label: "About Us", id: "about" },
-    { label: "Skills", id: "skills" },
+    { label: "Skills", id: "skills2" },
     { label: "Projects", id: "projects" },
     { label: "Resume", id: "resume" },
     { label: "Let's Talk", id: "contactform" },
