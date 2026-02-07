@@ -458,6 +458,7 @@ a:hover .fa-envelope {
 #skills2 .skill-card {
   backdrop-filter: blur(14px);
   background: rgb(169 169 169 / 8%);
+  border: 1px solid var(--card-border-color);
   border-radius: 16px;
   padding: 1.6rem 1rem;
   text-align: center;
@@ -735,9 +736,30 @@ a:hover .fa-envelope {
   transition: transform 0.5s ease;
 }
 
+.projects-card .project-live {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  background: linear-gradient(135deg, #ff9800, #ff5722);
+  color: #fff;
+
+  padding: 5px 10px;
+  border-radius: 999px;
+
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
 .projects-card:hover img {
   transform: scale(1.1);
 }
+
 
 /* Overlay slides from bottom */
 .overlay {

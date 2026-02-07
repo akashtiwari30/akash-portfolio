@@ -67,7 +67,7 @@ const resumeData = {
       description:
         "Empowering rural education and providing healthcare services to senior citizens.",
     },
-     {
+    {
       title: "Frontend Developer",
       organization: "Self-Developed",
       projectName: "Testy Food",
@@ -86,10 +86,10 @@ const resumeData = {
       period: "06/2023 - 08/2023",
       description:
         "Developed patient platform serving 10K+ users. Built responsive UI and telehealth features. 95% user satisfaction. Tech: React.js, Tailwind CSS, WebRTC.",
-    }, 
-   
+    },
+
   ],
-  
+
   education: [
     {
       title:
@@ -168,14 +168,18 @@ function MyResume() {
     });
   });
 
- 
+
 
   return (
     <>
       <div className="container-fluid" id="resume">
-        <h2 className="section-titl text-center my-4 mb-2 mb-md-4" style={{ top: "4.5rem" }}>
-          My Resume
-        </h2>
+        <div className="text-center">
+          <h2 className="section-titl text-center mt-4 " style={{ top: "4.5rem" }}>
+            My Resume
+          </h2>
+          <p className="section-subtitle">My journey so far</p>
+
+        </div>
 
         <div className="row section-padding">
           <div className="col-md-6 d-none">
@@ -189,8 +193,8 @@ function MyResume() {
                 <div
                   className="card p-3 mb-4"
                   key={index}
-                  // onClick={() => handleJobClick(job)} // for open the popup
-                  // style={{ cursor: "pointer" }}
+                // onClick={() => handleJobClick(job)} // for open the popup
+                // style={{ cursor: "pointer" }}
                 >
                   {/* <h5 className="card-title">{job.title}</h5> */}
                   <div className="card-text">
@@ -221,7 +225,7 @@ function MyResume() {
         </div>
       </div>
 
-    
+
     </>
   );
 }

@@ -58,6 +58,7 @@ function About() {
     <>
       <div className="container-fluid my-4" id="about">
         <h2 className="section-title text-center">About Me</h2>
+        <p className="section-subtitle text-center">Get to know me</p>
         <div className="row">
           <div className="col-lg-12">
             <div className="d-flex align-items-top">

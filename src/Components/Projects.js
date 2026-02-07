@@ -17,13 +17,15 @@ import angadi from "../Assets/Images/angadi.png";
 
 const projects = [
   {
-    title: "Honda Middle East & UAE Website",
-    type: "Enterprise Headless CMS Platform",
+    title: "Honda Mideast & UAE Website",
+    type: "Enterprise-level regional corporate website for Honda Motor Co. (Middle East & Africa).",
     tech: "HTML, CSS, React.js, Next.js, TypeScript, Sitecore XM Cloud (JSS)",
     website: "#",
     description:
       "Developed enterprise-level, CMS-driven web components using React.js, Next.js, and Sitecore XM Cloud Headless (JSS). Implemented multilingual support, optimized performance, and resolved complex rendering issues across environments.",
     img: '',
+    live: 'Not Live',
+    projectType: ''
   },
   {
     title: "CRM Doctor Website",
@@ -33,6 +35,8 @@ const projects = [
     description:
       "Developed and enhanced responsive UI components for a customer-facing platform, focusing on usability, visual consistency, and performance improvements.",
     img: crmdoctor,
+    live: 'live',
+    projectType: ''
   },
   {
     title: "Vtiger CRM Dashboard",
@@ -42,6 +46,8 @@ const projects = [
     description:
       "Customized and optimized CRM dashboard UI to improve responsiveness, usability, and overall application stability.",
     img: crmdashboard,
+    live: 'live',
+    projectType: ''
   },
   {
     title: "Biz Infra",
@@ -51,6 +57,8 @@ const projects = [
     description:
       "Built responsive, cross-browser compatible web pages and integrated frontend components with CMS-driven content updates.",
     img: bizinfra,
+    live: 'live',
+    projectType: ''
   },
   {
     title: "Dream Sparks Foundation",
@@ -60,6 +68,8 @@ const projects = [
     description:
       "Developed an NGO website with clear navigation, accessible forms, and improved content structure to enhance user engagement.",
     img: dreamsparks,
+    live: 'live',
+    projectType: ''
   },
   {
     title: "Tech Refurb Yard",
@@ -69,6 +79,8 @@ const projects = [
     description:
       "Delivered a responsive business website focusing on usability, performance, and content presentation.",
     img: techrefurbyard,
+    live: 'Not Live',
+    projectType: ''
   },
   {
     title: "Angadi’s Foundation",
@@ -78,6 +90,8 @@ const projects = [
     description:
       "Created a content-driven NGO website supporting education and healthcare initiatives with improved layout and accessibility.",
     img: angadi,
+    live: 'Not Live',
+projectType: ''
   },
   {
     title: "Testy Food",
@@ -87,6 +101,8 @@ const projects = [
     description:
       "Built a React-based food ordering application with add-to-cart functionality and meal filtering features.",
     img: testyfood,
+    live: 'live',
+    projectType: 'Personal Project'
   },
 ];
 
@@ -120,6 +136,7 @@ const Projects = () => {
                   className="card-img-top"
                   alt={project.title}
                 />
+                <p className="project-live">{project.live}</p>
                 <div className="overlay d-flex flex-column justify-content-center align-items-center">
                   <h5 className="text-center">{project.title}</h5>
                   <p className="text-center mb-3">{project.type}</p>
@@ -244,6 +261,19 @@ const Projects = () => {
                     Visit Project
                   </a> */}
 
+                  {selectedProject?.projectType && selectedProject.projectType !== "#" && (
+                    <div
+
+                      className="project-type"
+                    >
+                      <p className="mb-3 fw-semibold">
+                        Project Type:{" "}
+                        <span className="fs-6 blue-color">
+                          {selectedProject?.projectType}
+                        </span>
+                      </p>
+                    </div>
+                  )}
                   {selectedProject?.website && selectedProject.website !== "#" && (
                     <a
                       href={selectedProject.website}
